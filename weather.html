@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="weather.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+</head>
+
+<body>
+    <section class="outside">
+        <video autoplay loop muted plays-inline src="bg2.mp4" type="video/mp4" class="bgvideo"></video>
+        <div class="inside loadright">
+            <form role="search">
+                <div class="searchbar"><input type="search" placeholder="Search Your City" id="city"></div>
+                <div class="btn"><button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+
+            <div class="image1"></div>
+            <h2 class="tempbox"><span id="temp">0</span><sup> 0</sup>C</h2>
+            <h2 class="cityname"><span id="cityName">delhi</span></h2>
+            <div class="windspeed">
+                <div class="windlogo"></div><span id="wind_speed"></span> km/hr
+                <p>Wind Speed</p>
+            </div>
+            <div class="humidity"></i><span id="humidity"></span>%
+                <p>Humidity</p>
+            </div>
+            <div class="mintemp"><i class="fa-solid fa-temperature-arrow-down"></i> <span id="min_temp"></span> <sup>
+                    0</sup>C
+                <p>min temp</p>
+            </div>
+            <div class="maxtemp"><i class="fa-solid fa-temperature-arrow-up"></i> <span id="max_temp"></span> <sup>
+                    0</sup>C
+                <p>max temp</p>
+            </div>
+            <div class="feels"><span id="feels_like"></span> <sup>
+                    0</sup>C
+                <p>Feels like</p>
+            </div>
+            <div class="winddigree"><span id="wind_degrees"></span><sup>
+                    0</sup>
+                <p>Wind Digree</p>
+            </div>
+            <div class="sunset">
+                <span id="sunshr"></span>:
+                <span id="sunsmin"></span>:
+                <span id="sunssec"></span>
+                <p>Sunset</p>
+            </div>
+            <div class="sunrise">
+                <span id="sunrhr"></span>:
+                <span id="sunrmin"></span>:
+                <span id="sunrsec"></span>
+                <p>Sunrise</p>
+            </div>
+        </div>
+        <div class="tablesection loadleft">
+            <h2>Other City Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 11%;"></th>
+                        <th>Temperature</th>
+                        <th>Feels</th>
+                        <th>Max</th>
+                        <th>Min</th>
+                        <th>Humidity</th>
+                        <th>Wind <sup>0</sup></th>
+                        <th>Speed of wind</th>
+                        <th>Sunrise</th>
+                        <th>Sunset</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <th scope="row" class="text-start">Chandrapur</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <th scope="row" class="text-start">Nagpur</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row3">
+                        <th scope="row" class="text-start">Yavatmal</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row4">
+                        <th scope="row" class="text-start">Ballarpur</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row5">
+                        <th scope="row" class="text-start">Mul</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row6">
+                        <th scope="row" class="text-start">Amravati</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

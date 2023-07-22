@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* onload animation */
+.loadright {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    animation: slide-right 2s forwards;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-60%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.loadleft {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    animation: slide-left 2s forwards;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(60%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.outside {
+    height: 130vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 3% 0;
+}
+
+.bgvideo {
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inside {
+    height: 80%;
+    width: 90%;
+    background-image: linear-gradient(to bottom right, rgb(102, 218, 212), rgb(112, 219, 210));
+    margin: auto;
+    padding-top: 2%;
+    position: relative;
+    z-index: 5;
+}
+
+.inside form {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    margin-left: 8%;
+}
+
+form .searchbar {
+    height: 80%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    padding-left: 2%;
+    filter: drop-shadow(0 0 4px rgb(4, 110, 27));
+}
+
+form #city {
+    height: 100%;
+    width: 95%;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: white;
+}
+
+form .btn {
+    height: 80%;
+    width: 3.5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 4px rgb(4, 110, 27));
+}
+
+form .btn :hover {
+    transform: scale(1.09);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+form .btn button i {
+    height: 30%;
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+form .btn button {
+    width: 100%;
+    border: none;
+    background-color: white;
+
+}
+
+.image1 {
+    height: 14%;
+    width: 8%;
+    position: absolute;
+    left: 46%;
+    top: 17%;
+    background-image: url('sun.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tempbox {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 47%;
+    top: 34%;
+    font-size: 3rem;
+}
+
+.cityname {
+    height: 7%;
+    width: 10%;
+    position: absolute;
+    left: 46%;
+    top: 41%;
+    font-size: 3rem;
+}
+
+.windspeed {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 46%;
+    top: 56%;
+    font-size: 1.5rem;
+}
+
+.humidity {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    top: 71%;
+    font-size: 1.5rem;
+}
+
+.mintemp {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    top: 55%;
+    font-size: 1.5rem;
+}
+
+.maxtemp {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    font-size: 1.5rem;
+}
+
+.feels {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 62%;
+    top: 71%;
+    font-size: 1.5rem;
+}
+
+.winddigree {
+    height: 7%;
+    width: 8%;
+    position: absolute;
+    left: 46%;
+    top: 70%;
+    font-size: 1.5rem;
+}
+
+.sunrise {
+    height: 35%;
+    width: 20%;
+    background-image: url('sunrise.jpg');
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    font-size: 1.5rem;
+    background-size: cover;
+    color: white;
+}
+
+.sunset {
+    height: 35%;
+    width: 20%;
+    background-image: url('sunset.jpg');
+    position: absolute;
+    left: 77%;
+    top: 20%;
+    font-size: 1.5rem;
+    background-size: cover;
+    color: white;
+}
+
+/* table */
+.tablesection {
+    height: 40%;
+    width: 90%;
+    background-image: linear-gradient(rgb(102, 218, 212), rgb(112, 219, 210), rgb(188, 172, 233));
+    z-index: 5;
+    align-self: center;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.tablesection h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+thead tr {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(73, 211, 204), rgb(112, 219, 210), rgb(156, 130, 228));
+    width: 85vw;
+    font-size: 1.3rem;
+}
+
+tbody {
+    height: 38vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+tbody tr th {
+    font-size: 1.3rem;
+    color: black;
+    width: 8vw;
+    background-image: linear-gradient(to top, rgb(73, 211, 204), rgb(112, 219, 210), rgb(163, 139, 228));
+    ;
+}
+
+tbody tr {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+
+tbody tr td {
+    width: 3vw;
+    text-align: center;
+    font-size: 1.3rem;
+}

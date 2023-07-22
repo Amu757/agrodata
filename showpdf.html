@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Pdf</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .pdfpage iframe {
+            height: 95vh;
+            width: 80vw;
+            margin-top: 5vh;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pdfpage">
+        <iframe id="frame" src="./pdf/pestiside/CHILLI_final_web.pdf" type="application/pdf" width='1000'
+            height="1000"></iframe>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedFile = urlParams.get('pdf');
+        // Use the selectedFile value to display the PDF file on the page
+        let element = document.getElementById('frame');
+        let path = './pdf/pestiside/';
+        let ext = '.pdf'
+        element.src = `${path}${selectedFile}${ext}`;
+    </script>
+</body>
+
+</html>

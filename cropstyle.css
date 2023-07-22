@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cropwrap {
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    padding-top: 5vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 100%;
+}
+
+.flowbox {
+    height: 90%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.98);
+    margin-right: auto;
+    margin-left: auto;
+    filter: drop-shadow(0 0 10px rgb(84, 75, 75));
+    padding-top: 2%;
+    border-radius: 2%;
+}
+
+.row {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namesrow {
+    height: 5%;
+    width: 78%;
+    /* background-color: aquamarine; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+.namesrow span {
+    /* background-color: red; */
+    width: 20%;
+}
+
+#veg {
+    width: 16%;
+}
+
+#flow {
+    text-align: center;
+}
+
+#frut {
+    text-align: end;
+    width: 16%;
+}
+
+#grain {
+    width: 13%;
+    text-align: end;
+}
+
+#puls {
+    text-align: center;
+}
+
+.floatcard {
+    height: 95%;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 15vh;
+    margin-left: 2%;
+    margin-top: 3%;
+    filter: drop-shadow(0 0 6px rgb(84, 75, 75));
+    border-radius: 4%;
+}
+
+.floatcard:hover {
+    transform: scale(1.06);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.veg {
+    grid-area: veg;
+    background-image: url('./media/vegetable.jpg');
+    background-size: cover;
+}
+
+.flower {
+    grid-area: flower;
+    background-image: url('./media/flower.jpg');
+    background-size: cover;
+}
+
+.fruit {
+    grid-area: fruit;
+    background-image: url('./media/fruits.jpg');
+    background-size: cover;
+}
+
+
+.grain {
+    grid-area: grain;
+    background-image: url('./media/grain.jpg');
+    background-size: cover;
+}
+
+.pulses {
+    grid-area: pulses;
+    background-image: url('./media/pulses.jpg');
+    background-size: cover;
+}
+
+/*  */
+.detailswrap {
+    height: 95vh;
+    width: 100vw;
+    background-color: aquamarine;
+    padding-top: 2vh;
+}
+
+.innerbox {
+    height: 95%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.98);
+    margin-right: auto;
+    margin-left: auto;
+    filter: drop-shadow(0 0 10px rgb(84, 75, 75));
+    padding-top: 2%;
+    border-radius: 2%;
+    display: grid;
+    grid-template-rows: 60% 1fr;
+    grid-template-columns: 60% 1fr;
+    grid-template-areas:
+        'list image';
+    justify-items: center;
+    align-items: center;
+}
+
+.list {
+    grid-area: list;
+    background-color: blueviolet;
+    height: 90%;
+    width: 70%;
+    color: white;
+    display: flex;
+    row-gap: 5%;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 1%;
+    margin-bottom: 1%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 100%;
+}
+
+.cropimage {
+    grid-area: image;
+    /* background-color: violet; */
+    height: 90%;
+    width: 90%;
+}
+
+#imagebox {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.list a {
+    font-size: 25px;
+    background-color: rgba(33, 39, 39, 0.786);
+    width: 25%;
+    height: 35%;
+    line-height: 4vh;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+.list a:hover {
+    transform: scale(1.10);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    filter: drop-shadow(0 0 10px rgb(209, 190, 190));
+}

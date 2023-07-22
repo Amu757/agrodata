@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .outer {
+        height: 100vh;
+        width: 100vw;
+        /* background-color: violet; */
+        padding-top: 5%;
+        background: rgba(0, 0, 0, 0.2)url('aboutbg.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+        background-position: bottom center;
+    }
+
+    .inner {
+        height: 90%;
+        width: 90%;
+        /* background-color: rgb(109, 177, 233); */
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+    }
+
+    .cards {
+        height: 71%;
+        width: 28%;
+        background-color: #e75946;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 1.08rem;
+        color: white;
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        row-gap: 30px;
+    }
+
+    .text {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        height: 41%;
+        width: 51%;
+        background-color: white;
+        border-radius: 50%;
+        background-size: cover;
+        border: 8px solid rgb(255, 255, 255);
+    }
+
+    .img1 {
+        background-image: url('amanphoto.png');
+    }
+
+    .img2 {
+        background-image: url('amitphoto.jpg');
+    }
+
+    .img3 {
+        background-image: url('truptiphoto.jpg');
+    }
+
+    .iconbar {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .iconbar div:hover {
+        transform: scale(1.11);
+        transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .whitepage {
+        height: 33%;
+        width: 117%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-color: white;
+        color: black;
+        padding: 3%;
+        padding-top: 7%;
+        text-align: center;
+    }
+
+    .whitepage p {
+        visibility: hidden;
+    }
+
+    .cards:hover p {
+        visibility: visible;
+    }
+
+    .follow {
+        height: 8%;
+        width: 28%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        color: #e75946;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.06rem;
+        top: 66%;
+        filter: drop-shadow(0 0 8px rgba(212, 90, 53, 0.596));
+    }
+
+    .follow:hover {
+        transform: scale(1.11);
+        transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    /* onload animation */
+    .loadup {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        animation: slide-right 2s forwards;
+    }
+
+    @keyframes slide-right {
+        from {
+            transform: translateY(60%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <section class="outer">
+        <div class="inner">
+            <div class="cards loadup">
+                <div class="image img1"></div>
+                <div class="text">
+                    <h2>Aman R. Waghmare</h2>
+                    <p>MCA Graduate 2023</p>
+                    <div class="iconbar">
+                        <div><i class="fa-brands fa-square-instagram"></i></div>
+                        <div><i class="fa-brands fa-github"></i></div>
+                        <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    </div>
+                </div>
+                <div class="whitepage">
+                    <p>Welcome to our webpage! We are a team fueled by passion and driven by innovation. Led by Aman R.
+                        Waghmare, a recent
+                        master's degree graduate in MCA, we bring a fresh perspective to the table. Beyond our expertise
+                        in
+                        coding and
+                        problem-solving, that brings us together as a close-knit unit. Our unique blend of
+                        technical prowess allows us to tackle challenges with agility and teamwork.
+                    </p>
+                </div>
+                <div class="follow">Follow</div>
+
+            </div>
+            <div class="cards loadup">
+                <div class="image img2"></div>
+                <div class="text">
+                    <h2>Amit Gaohane</h2>
+                    <p>MSC Graduate 2023</p>
+                    <div class="iconbar">
+                        <div><i class="fa-brands fa-square-instagram"></i></div>
+                        <div><i class="fa-brands fa-github"></i></div>
+                        <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    </div>
+                </div>
+                <div class="whitepage">
+                    <p>Welcome to our webpage! We are a team fueled by passion and driven by innovation.a recent
+                        master's degree graduate in MSC, we bring a fresh perspective to the table. Beyond our expertise
+                        in
+                        coding and
+                        problem-solving, that brings us together as a close-knit unit. Our unique blend of
+                        technical prowess allows us to tackle challenges with agility and teamwork.
+                    </p>
+                </div>
+                <div class="follow">Follow</div>
+
+            </div>
+            <div class="cards loadup">
+                <div class="image img3"></div>
+                <div class="text">
+                    <h2>Trupti Gaurkar</h2>
+                    <p>MSC Graduate 2023</p>
+                    <div class="iconbar">
+                        <div><i class="fa-brands fa-square-instagram"></i></div>
+                        <div><i class="fa-brands fa-github"></i></div>
+                        <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    </div>
+                </div>
+                <div class="whitepage">
+                    <p>Welcome to our webpage! We are a team fueled by passion and driven by innovation.a recent
+                        master's degree graduate in MSC, we bring a fresh perspective to the table. Beyond our expertise
+                        in
+                        coding and
+                        problem-solving, that brings us together as a close-knit unit. Our unique blend of
+                        technical prowess allows us to tackle challenges with agility and teamwork.
+                    </p>
+                </div>
+                <div class="follow">Follow</div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest tool</title>
+    <link rel="stylesheet" href="peststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css"
+        integrity="sha512-0nkKORjFgcyxv3HbE4rzFUlENUMNqic/EzDIeYCgsKa/nwqr2B91Vu/tNAu4Q0cBuG4Xe/D1f/freEci/7GDRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"
+        integrity="sha512-eSeh0V+8U3qoxFnK3KgBsM69hrMOGMBy3CNxq/T4BArsSQJfKVsKb5joMqIPrNMjRQSTl4xG8oJRpgU2o9I7HQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <section class="outerlaout">
+        <div class="headline">
+            <div class="slider">
+                <ul class="imageline">
+                    <a onclick="showdata(1)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(2)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(3)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(4)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(5)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(6)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(7)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(8)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(9)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(10)">
+                        <li class="slideritem"></li>
+                    </a>
+                    <a onclick="showdata(11)">
+                        <li class="slideritem"></li>
+                    </a>
+
+                </ul>
+                <ul class="names">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leftpart">
+            <div class="searcharea">
+                <div class="searchbar">
+                    <select id="slectcrop" class="w-100" data-live-search="true">
+                        <button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown"
+                            role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="true"
+                            title="web Design"></button>
+                        <option value="">Select Crop Name</option>
+                        <option value="Rice">Rice(Paddy)</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Jowar">Sorghum(Jowar)</option>
+                        <option value="Bajra">Pearl_Millet(Bajra)</option>
+                        <option value="Corn">Maize(Corn)</option>
+                        <option value="Sugarcane">Sugarcane</option>
+                        <option value="Cotton">Cotton</option>
+                        <option value="Soybeans">Soybeans</option>
+                        <option value="Turmeric">Turmeric</option>
+                        <option value="Ginger">Ginger</option>
+                        <option value="Garlic">Garlic</option>
+                        <option value="Onion">Onion</option>
+                        <option value="Masoor">Lentils(Masoor)</option>
+                        <option value="Chana">Chickpeas(Chana)</option>
+                        <option value="Peanuts">Groundnuts(Peanuts)</option>
+                        <option value="Sunflower">Sunflower</option>
+                        <option value="Mustard">Mustard</option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Spices">Spices</option>
+                    </select>
+                </div>
+                <div class="leftimage">
+                </div>
+                <div id="titles1">
+                    <h6>Pests & Disease Control methods</h6>
+                </div>
+                <div class="pdfbar">
+                    <select id="selectpdf" class="w-100" data-live-search="true">
+                        <button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown"
+                            role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="true"
+                            title="web Design"></button>
+                        <option value="">Select PDF</option>
+                        <option value="sugarcane_insects">Shugarcane.pdf</option>
+                        <option value="cotton_pest">Cotton.pdf</option>
+                        <option value="chilli">Chilli.pdf</option>
+                        <option value="rice">Rice.pdf</option>
+                        <option value="greengram">Green Gram.pdf</option>
+                        <option value="maize">Maize Crop.pdf</option>
+                        <option value="pigeonpea">Pigeon Pea.pdf</option>
+                        <option value="soyabean">Soya Bean.pdf</option>
+                        <option value="biopest">Biological Pest.pdf</option>
+                        <option value="idm">Integrated Pest.pdf</option>
+                    </select>
+                </div>
+                <div id="titles2">
+                    <h6>Very Important</h6>
+                </div>
+                <div class="pdfbar">
+                    <select id="imppdf" class="w-100" data-live-search="true">
+                        <button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown"
+                            role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="true"
+                            title="web Design"></button>
+                        <option value="">Select</option>
+                        <option value="donot">Do Donot.pdf</option>
+                        <option value="labels">Pestiside Lebels.pdf</option>
+                        <option value="restrict">Restricted pestisides.pdf</option>
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="rightpart load">
+            <div class="load1">
+                <h2>Disease Name: <span id="diseaseName"></span></h2>
+                <div id="define" class="loading"></div>
+            </div>
+            <div class="load1">
+                <h2>Symtoms:</h2>
+                <div id="symtoms" class="loading"></div>
+            </div>
+            <div class="load1">
+                <h2>Disease Cycle:</h2>
+                <div id="cycle" class="loading"></div>
+            </div>
+            <div class="load1">
+                <h2>Impact:</h2>
+                <div id="impact" class="loading"></div>
+            </div>
+            <div class="load1">
+                <h2>Control:</h2>
+                <div id="control" class="loading"></div>
+            </div>
+            <div class="load1">
+                <h2>Integrated Disease Management (IDM):</h2>
+                <div id="idm" class="loading"></div>
+            </div>
+            <div id="photoframe" class="load1"></div>
+        </div>
+    </section>
+    <script src="pest.js"></script>
+    <script>
+        // open pdf files
+        selectpdf.onchange = function () {
+            const selectedFile = this.value;
+            const url = 'showpdf.html?pdf=' + encodeURIComponent(selectedFile);
+            window.location.href = url;
+        };
+        imppdf.onchange = function () {
+            const selectedFile = this.value;
+            const url = 'showpdf2.html?pdf=' + encodeURIComponent(selectedFile);
+            window.location.href = url;
+        };
+    </script>
+</body>
+
+</html>

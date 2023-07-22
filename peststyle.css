@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outerlaout {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 23% 1fr 1fr;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas:
+        'imagebar imagebar'
+        'left right'
+        'left right';
+    row-gap: 2px;
+    column-gap: 2px;
+    padding: 0.5%;
+    overflow-x: hidden;
+}
+
+/* slider line */
+.headline {
+    grid-area: imagebar;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.headline .slider {
+    width: 120%;
+    height: 80%;
+    /* background-color: rgb(48, 7, 230); */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    flex-grow: 0;
+    box-sizing: border-box;
+
+    animation-name: imageslider;
+    animation-duration: 18s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.slider .imageline {
+    height: 95%;
+    width: 150%;
+    /* background-color: rgb(116, 238, 68); */
+    display: flex;
+    /* justify-content: space-around; */
+    list-style: none;
+}
+
+.imageline li {
+    height: 155%;
+    width: 18vw;
+    background-size: cover;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.imageline li:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.slider .names {
+    height: 25%;
+    width: 170%;
+    /* background-color: rgb(40, 133, 3); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 25%;
+    list-style: none;
+}
+
+.names li {
+    height: 75%;
+    width: 20vw;
+    line-height: 35px;
+    font-size: 1.3rem;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+@keyframes imageslider {
+    0% {
+        margin-left: 0;
+    }
+
+    10% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: -10%;
+    }
+
+    30% {
+        margin-left: -20%;
+    }
+
+    40% {
+        margin-left: -30%;
+    }
+
+    50% {
+        margin-left: -37%;
+    }
+
+    60% {
+        margin-left: -45%;
+    }
+
+    70% {
+        margin-left: -57%;
+    }
+
+    80% {
+        margin-left: -64%;
+    }
+
+    90% {
+        margin-left: -70%;
+    }
+
+    100% {
+        margin-left: -77%;
+    }
+}
+
+/* search section */
+.leftpart {
+    grid-area: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.searcharea {
+    margin-left: 2%;
+    width: 98%;
+    height: 95%;
+    display: inline-block;
+    margin-right: 10px;
+    background: #c7cdf085 !important;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.searchbar {
+    width: 98%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.leftimage {
+    height: 35%;
+    width: 100%;
+    background-image: url('pestleft.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    overflow: hidden;
+}
+
+#titles1 {
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    top: 48%;
+}
+
+#titles2 {
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    top: 60%;
+}
+
+#selectpdf {
+    width: 45%;
+    margin-left: 7%;
+    position: absolute;
+    top: 52%;
+}
+
+#imppdf {
+    width: 45%;
+    margin-left: 7%;
+    position: absolute;
+    top: 64%;
+}
+
+/* display section */
+.rightpart {
+    grid-area: right;
+    min-height: 260%;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    background-color: #c7cdf085;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    box-sizing: border-box;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.rightpart h2 {
+    width: 98%;
+    display: inline-block;
+    background-color: rgb(153, 214, 194);
+    margin-bottom: 1%;
+}
+
+.rightpart>div:nth-child(1) {
+    width: 75%;
+}
+
+.rightpart>div:nth-child(2) {
+    width: 75%;
+}
+
+.rightpart>div:nth-child(3) {
+    width: 75%;
+}
+
+.rightpart>div {
+    width: 98%;
+    opacity: 0;
+    /* this is for animation */
+}
+
+.rightpart>div div {
+    font-size: 1.3rem;
+    margin-left: 2%;
+    opacity: 0;
+    /* thisis for animation */
+}
+
+#photoframe {
+    height: 26vh !important;
+    width: 16vw !important;
+    /* background-color: aqua !important; */
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+#define {
+    width: 93%;
+}
+
+#symtoms {
+    width: 93%;
+}
+
+#cycle {
+    width: 93%;
+}
+
+#impact {
+    width: 97%;
+}
+
+#control {
+    width: 97%;
+}
+
+#idm {
+    margin-left: 1%;
+    width: 97%;
+}
+
+/* onload animation instant*/
+.load {
+    animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* onload animation delay 1sec*/
+.load1 {
+    animation: slide-in 2s 1s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* onload animation delay 2sec*/
+.load2 {
+    animation: slide-in 2s 0.7s forwards running;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

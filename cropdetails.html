@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Details</title>
+    <link rel="stylesheet" href="cropstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="cropwrap">
+        <h1>Select A Category</h1>
+        <div class="flowbox">
+            <div class="row">
+                <a href="#croplist" class="floatcard veg"></a>
+                <a href="#croplist" class="floatcard flower"></a>
+                <a href="#croplist" class="floatcard fruit"></a>
+            </div>
+            <div class="namesrow"><span id="veg">Vegetables</span><span id="flow">Flowers</span><span
+                    id="frut">Fruits</span></div>
+            <div class="row">
+                <a href="#croplist" class="floatcard grain"></a>
+                <a href="#croplist" class="floatcard pulses"></a>
+            </div>
+            <div class="namesrow"><span id="grain">Grains</span><span id="puls">Pulses</span></div>
+        </div>
+    </section>
+    <section class="detailswrap" id="croplist">
+        <h2>Select Your Crop</h2>
+        <div class="innerbox">
+            <div class="list">
+                <a href="./media/veg/tomato.html" onmouseenter="changeImage('./media/veg/tomato.jpg')"
+                    class="vegitem">Tomato</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/carrots.jpg')" class="vegitem">carrot</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/ginger.jpg')" class="vegitem">ginger</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/AmaranthLeaves.jpg')" class="vegitem">amaranth</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/beetroot.jpg')" class="vegitem">beetroot</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Brinjal.jpg')" class="vegitem">brinjal</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/cabbage.jpg')" class="vegitem">cabbage</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/CapsicumBell.jpg')" class="vegitem">capsicum</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Cauliflower.png')" class="vegitem">cauliflower</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/coriander.jpg')" class="vegitem">coriander</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Cucumber.jpg')" class="vegitem">cucumber</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/garlic.jpg')" class="vegitem">garlic</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Green-Chilli.jpg')" class="vegitem">green-chilli</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/ladys finger.jpg')" class="vegitem">lady's finger</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Lemon.jpg')" class="vegitem">Lemon</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/mint.jpeg')" class="vegitem">mint</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/spinach.jpg')" class="vegitem">spinach</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/onion.jpg')" class="vegitem">onion</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/peas.jpg')" class="vegitem">peas</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/potato.jpg')" class="vegitem">patato</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/pumpkin-kaddu.jpg')" class="vegitem">pumpkin</a>
+                <a href="#" onmouseenter="changeImage('./media/veg/Radish.jpg')" class="vegitem">radish</a>
+                <audio src="./media/bolt.mp3" class="listsound"></audio>
+            </div>
+            <div class="cropimage">
+                <img src="./media/veg/tomato.jpg" alt="invalid" id="imagebox">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary.html</title>
+    <!-- <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section:nth-child(2) {
+            margin-top: 4%;
+        }
+
+        .outer-container {
+            width: 100vw;
+            height: 95vh;
+            background-image: url('bg4.jpg');
+            background-size: cover;
+        }
+
+        .sec1 {
+            /* background-image: url('bg4.jpg');
+            background-size: cover; */
+        }
+
+        .title {
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 600;
+            margin: 1vh 1vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-shadow: 3px 4px rgba(0, 0, 0, 0.273);
+        }
+
+        .inner-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .inner-container {
+            height: 90vh;
+            width: 90%;
+            display: inline-grid;
+            justify-items: center;
+            grid-template-rows: repeat(auto, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2vw;
+            row-gap: 5vh;
+            overflow-y: scroll;
+            margin-left: 7vw;
+            margin-right: 7vw;
+            padding-top: 1vh;
+        }
+
+        .cards iframe {
+            height: 30vh;
+            width: 20vw;
+        }
+
+        .cards {
+            height: 30vh;
+            width: 20vw;
+            background-color: rgb(242, 180, 180);
+            filter: drop-shadow(0 0 10px rgb(62, 56, 56));
+            position: relative;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .cards:hover .txtfield {
+            height: 35%;
+            transition: 1s;
+        }
+
+        .cards:hover {
+            transform: scale(1.05);
+            transition: 0.8s;
+        }
+
+        .txtfield {
+            height: 15%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="gallary.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">SmartAgro</div>
+        <nav>
+            <div>Home</div>
+            <div>Product</div>
+            <div>Pricing</div>
+            <div>contact</div>
+        </nav>
+    </header>
+    <section class="title">
+        Farming Techniques
+    </section>
+    <section class="galbox">
+        <div class="cards"><iframe width="330" height="215" src="https://www.youtube.com/embed/ECCjpAGeCA4"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
+            <div class="txtfield">
+                <h3 class="boxtitle">Sweet Lime digestive benefits,colds and coughs</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="outer-container sec1">
+        <h2 class="title">Farming Techniques</h2>
+        <div class="inner-container">
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/ECCjpAGeCA4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Sweet Lime</h3>
+                    <p>Medicinal properties: In traditional medicine, sweet lime has been used for its medicinal
+                        properties, believed to have
+                        digestive benefits, aid in the treatment of colds and coughs, and improve overall health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/umqDZx_ooYY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Dragon Fruit</h3>
+                    <p>Rich in antioxidants, dragon fruit boosts the immune system and promotes healthy digestion. It
+                        may also aid in reducing
+                        inflammation and improving cardiovascular health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/YEiOG1slQJY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Cultivating</h3>
+                    <p>Cultivating land involves preparing the soil by clearing debris and tilling it to improve
+                        aeration and nutrient
+                        distribution. It also includes managing irrigation systems to provide water for crop growth,
+                        implementing weed control
+                        measures to suppress unwanted plants, and ensuring proper pest and disease management. The goal
+                        is to create an optimal
+                        environment for crops to thrive and maximize agricultural productivity.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/ev7oOsMaWiY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Banana</h3>
+                    <p>Bananas are known for their high potassium content, which supports heart health and regulates
+                        blood pressure. They are
+                        also a good source of dietary fiber and provide relief from gastrointestinal issues like
+                        constipation.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/00YVLmyirrA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Green Gram</h3>
+                    <p>Harbhara, also known as green gram or mung bean, is a nutritious legume. It is packed with
+                        protein, fiber, and
+                        antioxidants, which contribute to better digestion, weight management, and improved overall
+                        health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/qkaUeLSx2kA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Dates</h3>
+                    <p>Dates are a rich source of vitamins, minerals, and fiber. They have natural sugars that provide a
+                        quick energy boost and
+                        are known for their laxative properties, aiding in relieving constipation.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/lz6010dZ6Uw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Wheat</h3>
+                    <p>Wheat is a staple grain rich in dietary fiber, essential minerals, and B-vitamins. It supports
+                        digestive health, helps
+                        regulate blood sugar levels, and provides sustained energy.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWNz9bIsgNI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Soybean</h3>
+                    <p>Soybeans are a complete protein source and contain phytochemicals that may reduce the risk of
+                        heart disease. They are
+                        also rich in fiber, vitamins, and minerals, contributing to bone health and hormonal balance.
+                    </p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/e4W_NsVjw40"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Dragon Fruit</h3>
+                    <p>Rich in antioxidants, dragon fruit boosts the immune system and promotes healthy digestion. It
+                        may also aid in reducing
+                        inflammation and improving cardiovascular health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFWpHjgN8Uk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Peek vima Yojna</h3>
+                    <p>"Peek Vima Yojna" is a crop insurance scheme implemented in India. It aims to provide financial
+                        protection to farmers
+                        against crop losses caused by natural calamities, pests, and diseases. Under this scheme,
+                        farmers pay a nominal premium,
+                        and in case of crop damage, they receive compensation to help recover their losses. The Peek
+                        Vima Yojna plays a crucial
+                        role in safeguarding the livelihoods of farmers and promoting agricultural stability in the
+                        country.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/nMpGC2eA8iE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Business</h3>
+                    <p>Business ideas for females can be done from their home itself </p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/0u_-nCiakQ4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Tomato</h3>
+                    <p>Tomatoes are rich in lycopene, an antioxidant known for its potential to reduce the risk of
+                        certain cancers. They also
+                        provide vitamins A and C, support heart health, and have anti-inflammatory properties.</p>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- <section class="outer-container sec1">
+        <h2 class="title">Fruits And Vegies</h2>
+        <div class="inner-container">
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/sQnSdq4QZM0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Mango</h3>
+                    <p>Mangoes are not only delicious but also provide numerous health benefits. They are a good source
+                        of vitamin C, dietary
+                        fiber, and antioxidants, which contribute to immune support, digestion, and eye health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/3AkcbxEjKc8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Papaya</h3>
+                    <p>Papaya is rich in papain, an enzyme that aids in digestion. It is also a good source of vitamin C
+                        and antioxidants,
+                        promoting skin health, boosting immunity, and supporting healthy digestion.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/fDUlov1XcDk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Guava</h3>
+                    <p>Guava is packed with vitamin C, dietary fiber, and antioxidants. It aids digestion, strengthens
+                        the immune system, and
+                        may help lower blood sugar levels.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/Zd8_anXLHHU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Tomato</h3>
+                    <p>Tomatoes are rich in lycopene, an antioxidant known for its potential to reduce the risk of
+                        certain cancers. They also
+                        provide vitamins A and C, support heart health, and have anti-inflammatory properties.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/2_PL0CRE00E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Corn</h3>
+                    <p>Corn is a good source of fiber, vitamins, and minerals. It supports digestive health, provides
+                        energy, and contains
+                        antioxidants that may help protect against chronic diseases.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/x2Obn50SUIo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Coriander</h3>
+                    <p>Coriander leaves and seeds are known for their medicinal properties. They aid digestion, have
+                        anti-inflammatory and
+                        antimicrobial effects, and may help lower cholesterol levels.</p>
+
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/HGBmBEzjptU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Onion</h3>
+                    <p>Onions contain compounds that have antimicrobial and anti-inflammatory properties. They support
+                        heart health, boost immunity, and have potential cancer-fighting properties.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/EZ1RDAWO-LA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Green Gram</h3>
+                    <p>Harbhara, also known as green gram or mung bean, is a nutritious legume. It is packed with
+                        protein, fiber, and
+                        antioxidants, which contribute to better digestion, weight management, and improved overall
+                        health.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/AvhtmnAzwXU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Chilli</h3>
+                    <p>Chilli peppers contain capsaicin, which has pain-relieving properties and may aid in weight
+                        management. They also
+                        provide vitamin C and antioxidants, contributing to immune support and reducing oxidative
+                        stress.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/yME1VEuJCUQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Cabbage</h3>
+                    <p>Cabbage is rich in fiber, vitamins, and antioxidants. It supports digestive health, helps in
+                        detoxification, and may
+                        have anti-cancer properties.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/k-LpOVnUO90"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Cucumber</h3>
+                    <p>Hydration and detoxification: Kakdi has high water content, which helps in keeping the body
+                        hydrated. It also acts as a
+                        natural diuretic, aiding in detoxification and flushing out toxins from the body.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/O0laf_h5Iec"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">Spinach</h3>
+                    <p>Spinach is packed with nutrients, including iron, vitamins A and C, and antioxidants. It supports
+                        eye health,
+                        strengthens the immune system, and contributes to overall well-being.</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/sQnSdq4QZM0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">weather today</h3>
+                    <p>other relarive infor here</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/3AkcbxEjKc8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">weather today</h3>
+                    <p>other relarive infor here</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/fDUlov1XcDk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">weather today</h3>
+                    <p>other relarive infor here</p>
+                </div>
+            </div>
+            <div class="cards"><iframe width="560" height="315" src="https://www.youtube.com/embed/Zd8_anXLHHU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="txtfield">
+                    <h3 class="boxtitle">weather today</h3>
+                    <p>other relarive infor here</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section> -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Italianno&display=swap" rel="stylesheet">
+</body>
+
+</html>
